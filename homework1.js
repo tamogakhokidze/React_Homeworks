@@ -59,10 +59,10 @@ isAvarage(2, 10, 20, 4);
 
 const patient = {
   personalNumber: 11,
-  firstName: "x",
-  lastName: "y",
-  age: 20,
-  diagnosis: "p",
+  firstName: "თამო",
+  lastName: "გახოკიძე",
+  age: 80,
+  diagnosis: "შაკიკი",
 };
 
 function patientFunction(patient) {
@@ -70,6 +70,7 @@ function patientFunction(patient) {
 }
 
 patientFunction(patient);
+console.log(patient);
 
 // 6) შევქმნათ ობიექტი Employee, რომელსაც აქვს ველები - სახელი, პოზიცია, ხელფასი, მისამართი -
 // რომელიც არის ასევე ობიექტი ველებით - ქალაქო, ქუჩა, კორპუსი
