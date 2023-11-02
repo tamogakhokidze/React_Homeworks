@@ -55,11 +55,17 @@ console.log(carsArray[2].price);
 //     შევქმნათ ახალი ფუქნცია, რომელსაც პარამეტრად გადაეცემა არაი და რომელიც
 //აბრუნებს პირველ და ბოლო ელემენტებს ახალ არაიში ჩაწერილს.
 
-let arr = ["samsung", "xiaomi", "htc", "nokia"];
-
 function mobilePhones(arr, index) {
   return arr.length;
 }
+var arr = ["samsung", "xiaomi", "htc", "nokia"];
+var index = 2;
 console.log(arr.length);
-
 console.log(arr[2]);
+
+function newMobilePhones(arr) {
+  return [arr[0], arr[arr.length - 1]];
+}
+var arr = ["samsung", "xiaomi", "htc", "nokia"];
+var result = newMobilePhones(arr)
+console.log(result);
