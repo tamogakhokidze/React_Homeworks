@@ -56,16 +56,15 @@ console.log(carsArray[2].price);
 //აბრუნებს პირველ და ბოლო ელემენტებს ახალ არაიში ჩაწერილს.
 
 function mobilePhones(arr, index) {
-  return arr.length;
+  return arr[index].length;
 }
 var arr = ["samsung", "xiaomi", "htc", "nokia"];
 var index = 2;
-console.log(arr.length);
-console.log(arr[2]);
+console.log(arr[2].length);
 
 function newMobilePhones(arr) {
   return [arr[0], arr[arr.length - 1]];
 }
 var arr = ["samsung", "xiaomi", "htc", "nokia"];
-var result = newMobilePhones(arr)
+var result = newMobilePhones(arr);
 console.log(result);
