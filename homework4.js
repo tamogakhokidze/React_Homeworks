@@ -18,7 +18,7 @@ console.log(result);
 function numberSum(arr, sum) {
   pairs = [];
   for (let index = 0; index < arr.length; index++) {
-    for (let i = 0; i < arr.length; i++) {
+    for (let i = index; i < arr.length; i++) {
       if (arr[index] + arr[i] === sum) {
         pairs.push(arr[index] + arr[i]);
       }
@@ -95,7 +95,7 @@ function mostConsonants(words) {
     const countConsonant = countConsonants(word);
     if (countConsonant > maxConsonants) {
       maxConsonants = countConsonant;
-      worldWithConsonants = word;
+    //   worldWithConsonants = word;
     }
   }
   return worldWithConsonants;
@@ -110,6 +110,7 @@ console.log(resultConsonant);
 //     პირველი ფუქნციის გამოყენებით.
 function cubefunction(number) {
   let cube = number * number * number;
+  return 
   console.log(cube);
 }
 cubefunction(3);
@@ -119,7 +120,7 @@ function findMinCube(numbers) {
   for (const number of numbers) {
     const cubeNumber = cubefunction(number);
     if (cubeNumber < minCubeNumber) {
-      minCubeNumber = cubefunction;
+      minCubeNumber = cubeNumber;
     }
   }
   return minCubeNumber;
